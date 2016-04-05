@@ -41,7 +41,7 @@ public class Main {
             for (int i = 0; i <= 1000000000; i++) {
                 est.addPoint();
                 if(i%100000==0){
-                    double error = est.getError().doubleValue();
+                    double error = est.getError().doubleValue()*100;
                     bf.write(i+"\t"+error);
                     bf.newLine();
                 }
